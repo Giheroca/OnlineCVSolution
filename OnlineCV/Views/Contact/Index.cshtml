@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Contact Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Contact Page</h1>
+
+    <form asp-action="Send" method="post">
+        <input type="text" name="FirstName" placeholder="voornaam" required />
+        <input type="text" name="LastName" placeholder="achternaam" required />
+        <input type="email" name="Email" placeholder="email" required />
+        <input type="tel" name="PhoneNumber" placeholder="telefoonnummer" required>
+        <input type="text" name="message" placeholder="Typ je bericht" required />
+        <button type="submit">Verstuur</button>
+    </form>
+</div>
